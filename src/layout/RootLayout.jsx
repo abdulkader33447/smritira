@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router";
-import CircularDeterminate from "../components/CircularDeterminate/CircularDeterminate";
 
 const RootLayout = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false),1200);
+    const timer = setTimeout(() => setLoading(false), 200);
     return () => clearTimeout(timer);
   }, []);
 
@@ -25,7 +24,6 @@ const RootLayout = () => {
 
         {/* Centered Loader */}
         <div className="relative z-10 flex flex-col items-center justify-center">
-          <CircularDeterminate />
           <p className="text-slate-400 mt-4 text-lg font-medium">Loading...</p>
         </div>
       </div>
