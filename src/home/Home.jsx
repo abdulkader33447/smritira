@@ -1,5 +1,5 @@
 import Navbar from "@/components/shared/Navbar";
-import Hero from "./pages/Hero/Hero";
+import Hero from "./sections/Hero/Hero";
 
 const Home = () => {
   return (
