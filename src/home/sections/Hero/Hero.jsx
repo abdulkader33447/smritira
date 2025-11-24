@@ -1,5 +1,4 @@
 
-import { Button } from "@/components/ui/button";
 import lottiePhone from "../../../assets/lotties/lottiePhone.json";
 import Lottie from "lottie-react";
 
@@ -16,20 +15,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="lottie-icon mt-10 flex justify-center">
-        
         <Lottie
           // style={{ width: "380px" }}
           animationData={lottiePhone}
           loop={true}
         />
       </div>
-
-       {/* CTA */}
-        <div>
-          <Button className="shadow-md transition duration-300">
-            Get Started
-          </Button>
-        </div>
     </div>
   );
 };
