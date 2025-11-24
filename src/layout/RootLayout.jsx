@@ -1,11 +1,14 @@
+import Spinner from "@/components/Spinner/Spinner";
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router";
+// import lottieIcon from "../assets/lotties/lottie-icon.json";
+// import Lottie from "lottie-react";
 
 const RootLayout = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 200);
+    const timer = setTimeout(() => setLoading(false), 700);
     return () => clearTimeout(timer);
   }, []);
 
@@ -22,9 +25,9 @@ const RootLayout = () => {
           }}
         />
 
-        {/* Centered Loader */}
-        <div className="relative z-10 flex flex-col items-center justify-center">
-          <p className="text-slate-400 mt-4 text-lg font-medium">Loading...</p>
+        {/* spinner */}
+        <div>
+          <Spinner />
         </div>
       </div>
     );

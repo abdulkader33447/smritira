@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       <Navbar/>
       <Hero />
-      
+      {/* Preserving Memories, Celebrating Lives */}
     </div>
   );
 };
