@@ -18,6 +18,7 @@
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.553.0",
     "react-dom": "^19.1.1",
+    "react-fast-marquee": "^1.6.5",
     "react-router": "^7.9.5",
     "shadcn-ui": "^0.9.5",
     "tailwind-merge": "^3.4.0",
