@@ -6,8 +6,9 @@ const Cta = () => {
       {/* CTA */}
       <div className="flex justify-center mt-8">
         <Button className="shadow-md transition duration-300 cursor-pointer">
-          Get Started
+          Create A Eavent
         </Button>
+        
       </div>
     </div>
   );

@@ -26,10 +26,6 @@ export default function Navbar() {
           <Link to="/">Home</Link>
         </Button>
 
-        <Button asChild>
-          <Link to="/about">About</Link>
-        </Button>
-
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button>Services</Button>
@@ -52,6 +48,10 @@ export default function Navbar() {
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
+
+        <Button asChild>
+          <Link to="/about">About</Link>
+        </Button>
 
         <Button asChild>
           <Link to="/contact">Contact</Link>
@@ -89,13 +89,6 @@ export default function Navbar() {
               Home
             </Link>
 
-            <Link
-              to="/about"
-              className="px-4 py-2 hover:bg-gray-400/80 transition duration-300 rounded"
-              onClick={() => setOpen(false)}>
-              About
-            </Link>
-
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
               className="px-4 py-2 text-left hover:bg-gray-400/80 transition duration-300 rounded w-full cursor-pointer">
@@ -118,6 +111,13 @@ export default function Navbar() {
                 </Link>
               </div>
             )}
+
+            <Link
+              to="/about"
+              className="px-4 py-2 hover:bg-gray-400/80 transition duration-300 rounded"
+              onClick={() => setOpen(false)}>
+              About
+            </Link>
 
             <Link
               to="/contact"

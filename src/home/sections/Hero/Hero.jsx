@@ -4,13 +4,13 @@ import Lottie from "lottie-react";
 
 const Hero = () => {
   return (
-    <div className="sm:pt-40 pt-35">
+    <div className="sm:pt-40 py-35">
       <div className="hero-container text-center space-y-5">
-        <h1 className="sm:text-6xl text-4xl font-bold">SMRITIRA</h1>
-        <div className="sm:text-2xl text-lg font-medium">
+        <h1 className="lg:text-8xl text-5xl font-bold">SMRITIRA</h1>
+        <div className="sm:text-3xl text-xl font-medium">
           <p>
             Click Anyone, Save Here. <br /> Preserving Memories, Celebrating
-            Lives
+            Lives.
           </p>
         </div>
       </div>
